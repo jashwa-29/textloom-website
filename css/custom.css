@@ -2000,7 +2000,7 @@ header.main-header .header-sticky.active{
 
 .benefits-content-body{
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap; align-items: start;
 	gap: 30px;
 	margin-top: 50px;
 }
