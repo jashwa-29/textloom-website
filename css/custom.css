@@ -594,7 +594,6 @@ header.main-header .header-sticky.active .main-menu ul li a:hover {
 .footer-logo img.footerlogo{
 	width: 230px !important;
 	height: auto;
-	filter: brightness(0) invert(1);
 	transition: all 0.3s ease-in-out;
 }
 .navbar-brand{
@@ -6306,8 +6305,19 @@ header.active-sticky-header .header-sticky.active .navbar-brand{
 		top: 0;
 	}
 	
+	header.main-header .header-sticky{
+		background: var(--white-color);
+	}
+
 	header.main-header .header-sticky.active{
 		border-radius: 0;
+		background: var(--white-color);
+	}
+
+	header .navbar-brand{
+		background: transparent !important;
+		box-shadow: none !important;
+		padding: 0 !important;
 	}
 
 	.navbar{
