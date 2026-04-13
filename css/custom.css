@@ -588,13 +588,38 @@ header.main-header .header-sticky.active .main-menu ul li a:hover {
 }
 
 .logo{
-	width: 200px;
-	filter: brightness(1.1) contrast(1.1) drop-shadow(0 0 1px rgba(255,255,255,0.2));
+	width: 170px;
+	transition: all 0.3s ease-in-out;
+}
+.footer-logo img.footerlogo{
+	width: 230px !important;
+	height: auto;
 	transition: all 0.3s ease-in-out;
 }
 .navbar-brand{
 	padding: 0;
 	margin: 0;
+}
+header .navbar-brand{
+	padding: 10px 25px !important;
+	margin: 0;
+	background: var(--white-color);
+	border-radius: 10px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease-in-out;
+}
+header .navbar-brand:hover{
+	transform: translateY(-2px);
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+header.active-sticky-header .header-sticky.active .navbar-brand{
+	background: transparent;
+	box-shadow: none;
+	padding: 0 !important;
 }
 
 .main-menu .nav-menu-wrapper{
