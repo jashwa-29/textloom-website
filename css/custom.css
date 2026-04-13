@@ -594,6 +594,7 @@ header.main-header .header-sticky.active .main-menu ul li a:hover {
 .footer-logo img.footerlogo{
 	width: 230px !important;
 	height: auto;
+	filter: brightness(0) invert(1);
 	transition: all 0.3s ease-in-out;
 }
 .navbar-brand{
