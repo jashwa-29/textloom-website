@@ -1,42 +1,51 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <!-- Mirrored from html.awaikenthemes.com/linex/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Dec 2025 09:29:46 GMT -->
 <head>
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Awaiken">
 	<!-- Page Title -->
     <title>Linex - Textile & Fabric Manufacturing HTML Template</title>
 	<!-- Favicon Icon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/icon.png">
-	<!-- Google Fonts Css-->
-	<link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="images/icon-small.png">
+	<!-- Preload Critical Assets -->
+	<link rel="preload" href="images/page-header-bg.webp" as="image" fetchpriority="high">
+	<link rel="preload" href="css/bootstrap.min.css" as="style">
+	<link rel="preload" href="css/custom.css" as="style">
+	
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 	<!-- Bootstrap Css -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- SlickNav Css -->
-	<link href="css/slicknav.min.css" rel="stylesheet">
-	<!-- Swiper Css -->
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<!-- Font Awesome Icon Css-->
-	<link href="css/all.min.css" rel="stylesheet" media="screen">
-	<!-- Animated Css -->
-	<link href="css/animate.css" rel="stylesheet">
-    <!-- Magnific Popup Core Css File -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Mouse Cursor Css File -->
-	<link rel="stylesheet" href="css/mousecursor.css">
-	<!-- Main Custom Css -->
+	<!-- Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
-    <!-- Add this to your head section -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
+	<!-- Non-Critical Css (Async Loading) -->
+	<link href="css/slicknav.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" media="print" onload="this.media='all'">
+	<link href="css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+	<link href="css/animate.css" rel="stylesheet" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="css/magnific-popup.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="css/mousecursor.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+
+	<noscript>
+		<link href="css/slicknav.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link href="css/all.min.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/mousecursor.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	</noscript>
 </head>
 <body>
 
@@ -44,7 +53,7 @@
 	<div class="preloader">
 		<div class="loading-container">
 			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/icon.png" alt=""></div>
+			<div id="loading-icon"><img src="images/icon-small.png" alt="Loading Icon" width="50" height="58"></div>
 		</div>
 	</div>
 	<!-- Preloader End -->
@@ -56,7 +65,7 @@
 				<div class="container">
 					<!-- Logo Start -->
 					<a class="navbar-brand" href="./index.html">
-						<img class="logo" src="./images/logo-official.png" alt="Texloom Logo">
+						<picture><source srcset="./images/logo-official.webp" type="image/webp"><img class="logo" src="./images/logo-official.png" alt="Texloom Logo" width="170" height="51" fetchpriority="high"></picture>
                 
 					</a>
 					<!-- Logo End -->
@@ -88,6 +97,8 @@
 	</header>
 	<!-- Header End -->
 
+    <main>
+
     <!-- Page Header Section Start -->
     <div class="page-header bg-section parallaxie">
         <div class="container">
@@ -117,8 +128,8 @@
             <div class="col-lg-12">
                 <!-- Section Title Start -->
                 <div class="section-title section-title-center">
-                    <h3 class="wow fadeInUp">Our Products</h3>
-                    <h2 class="text-anime-style-3" data-cursor="-opaque">From tailored formals to rugged casuals – a complete trouser portfolio</h2>
+                    <h2 class="wow fadeInUp subtitle-style">Our Products</h2>
+                    <h3 class="text-anime-style-3" data-cursor="-opaque">From tailored formals to rugged casuals – a complete trouser portfolio</h3>
                 </div>
                 <!-- Section Title End -->
             </div>
@@ -133,7 +144,7 @@
 
                          <!-- 📌 New Product Image Block -->
         <div class="product-showcase">
-            <img src="images/product1.png" alt="Formal Trousers">
+            <picture><source srcset="images/product1.webp" type="image/webp"><img src="images/product1.png" alt="Formal Trousers" width="300" height="300" loading="lazy"></picture>
         </div>
                         <div class="services-item-content">
                             <h3>Tailored Formal Pants</h3>
@@ -158,7 +169,7 @@
                   
                                             <!-- 📌 New Product Image Block -->
         <div class="product-showcase">
-            <img src="images/product2.png" alt="Formal Trousers">
+            <picture><source srcset="images/product2.webp" type="image/webp"><img src="images/product2.png" alt="Chinos" width="300" height="300" loading="lazy"></picture>
         </div>
                         <div class="services-item-content">
                             <h3>Chinos</h3>
@@ -183,7 +194,7 @@
                     
                                             <!-- 📌 New Product Image Block -->
         <div class="product-showcase">
-            <img src="images/product3.png" alt="Formal Trousers">
+            <picture><source srcset="images/product3.webp" type="image/webp"><img src="images/product3.png" alt="Denim Jeans" width="300" height="300" loading="lazy"></picture>
         </div>
                         <div class="services-item-content">
                             <h3>Denim Jeans</h3>
@@ -207,7 +218,7 @@
                     <div class="service-info-box">
                 
                            <div class="product-showcase">
-            <img src="images/product4.png" alt="Formal Trousers">
+            <picture><source srcset="images/product4.webp" type="image/webp"><img src="images/product4.png" alt="Cargo Trousers" width="300" height="300" loading="lazy"></picture>
         </div>
                         <div class="services-item-content">
                             <h3>Cargo Trousers</h3>
@@ -230,7 +241,7 @@
                 <div class="services-item wow fadeInUp" data-wow-delay="0.8s">
                     <div class="service-info-box">
                         <div class="product-showcase">
-                            <img src="images/other-products.png" alt="Other Products">
+                            <img src="images/other-products.png" alt="Other Products" width="300" height="300" loading="lazy">
                         </div>
                         <div class="services-item-content">
                             <h3>Other Products</h3>
@@ -260,8 +271,8 @@
               <div class="row section-row">
             <div class="col-lg-12">
                 <div class="section-title section-title-center">
-                    <h3 class="wow fadeInUp">Our Machinery</h3>
-                    <h2 class="text-anime-style-3" data-cursor="-opaque">Specialized equipment for precision & durability across all trouser types</h2>
+                    <h2 class="wow fadeInUp subtitle-style">Our Machinery</h2>
+                    <h3 class="text-anime-style-3" data-cursor="-opaque">Specialized equipment for precision & durability across all trouser types</h3>
                 </div>
             </div>
         </div>
@@ -275,7 +286,7 @@
                     <!-- Post Featured Image Start-->
                     <div class="post-featured-image">
                             <figure class="image-anime">
-                                <img src="images/machinery1.png" alt="Segment-Specific Machinery">
+                                <picture><source srcset="images/machinery1.webp" type="image/webp"><img src="images/machinery1.png" alt="Segment-Specific Machinery" width="400" height="300" loading="lazy"></picture>
                             </figure>    
                         <div class="post-item-tags">
                             Segment-Specific
@@ -309,7 +320,7 @@
                     <!-- Post Featured Image Start-->
                     <div class="post-featured-image">
                             <figure class="image-anime">
-                                <img src="images/machinery2.png" alt="CAD/CAM System">
+                                <picture><source srcset="images/machinery2.webp" type="image/webp"><img src="images/machinery2.png" alt="CAD/CAM System" width="400" height="300" loading="lazy"></picture>
                             </figure>    
                         <div class="post-item-tags">
                             CAD/CAM System
@@ -343,7 +354,7 @@
                     <!-- Post Featured Image Start-->
                     <div class="post-featured-image">
                             <figure class="image-anime">
-                                <img src="images/machinery3.png" alt="Material Handling Systems">
+                                <picture><source srcset="images/machinery3.webp" type="image/webp"><img src="images/machinery3.png" alt="Material Handling Systems" width="400" height="300" loading="lazy"></picture>
                             </figure>    
                         <div class="post-item-tags">
                             Material Handling
@@ -382,8 +393,8 @@
             <div class="col-lg-12">
                 <!-- Section Title Start -->
                 <div class="section-title section-title-center">
-                    <h3 class="wow fadeInUp">Our Features</h3>
-                    <h2 class="text-effect" data-cursor="-opaque">Redefining trouser manufacturing through Industry 4.0 <span class="feature-title-img-1"><img src="images/feature-title-img-1.svg" alt="Industry 4.0"></span> and precision <span class="feature-title-img-2"><img src="images/feature-title-img-2.jpg" alt="Precision Manufacturing"></span> craftsmanship</h2>
+                    <h2 class="wow fadeInUp subtitle-style">Our Features</h2>
+                    <h3 class="text-effect" data-cursor="-opaque">Redefining trouser manufacturing through Industry 4.0 <span class="feature-title-img-1"><img src="images/feature-title-img-1.svg" alt="Industry 4.0" width="30" height="30" loading="lazy"></span> and precision <span class="feature-title-img-2"><img src="images/feature-title-img-2.jpg" alt="Precision Manufacturing" width="30" height="30" loading="lazy"></span> craftsmanship</h3>
                 </div>
                 <!-- Section Title End -->
             </div>
@@ -396,7 +407,7 @@
                     <!-- Feature Item Start -->
                     <div class="feature-item">
                         <div class="icon-box">
-                            <img src="images/icon-feature-1.svg" alt="Smart Factory">
+                            <img src="images/icon-feature-1.svg" alt="Smart Factory" width="50" height="50" loading="lazy">
                         </div>
                         <div class="feature-item-content">
                             <h3>Smart Factory Integration</h3>
@@ -408,7 +419,7 @@
                             </ul>
                         </div>
                         <div class="feature-bg-img">
-                            <img src="images/icon-feature-bg.svg" alt="">
+                            <img src="images/icon-feature-bg.svg" alt="" width="100" height="100" loading="lazy">
                         </div>
                     </div>
                     <!-- Feature Item End -->
@@ -416,7 +427,7 @@
                     <!-- Feature Image Start -->
                     <div class="feature-image">
                         <figure class="image-anime">
-                            <img src="./images/feature-image-tamil.png" alt="Texloom Tamil Woman Factory Worker">
+                            <img src="./images/feature-image-tamil.png" alt="Texloom Tamil Woman Factory Worker" width="400" height="500" loading="lazy">
                         </figure>
                     </div>
                     <!-- Feature Image End -->
@@ -451,7 +462,7 @@
                     <!-- Feature Info Image Start -->
                     <div class="feature-info-image">
                         <figure class="image-anime">
-                            <img src="images/feature-image-2.jpg" alt="Texloom Quality Inspection">
+                            <img src="images/feature-image-2.jpg" alt="Texloom Quality Inspection" width="400" height="300" loading="lazy">
                         </figure>
                     </div>
                     <!-- Feature Info Image End -->
@@ -470,7 +481,7 @@
                             </figure>
                         </div> -->
                         <div class="satisfy-client-image add-more">
-                            <img src="images/icon-phone-primary.svg" alt="Contact">
+                            <img src="images/icon-phone-primary.svg" alt="Contact" width="40" height="40" loading="lazy">
                         </div>
                     </div>
                     <!-- Satisfy Client Images End -->    
@@ -487,6 +498,7 @@
 
 
 
+	</main>
     <!-- Footer Section Start -->
   <footer class="main-footer bg-section dark-section">
         <div class="container">
@@ -503,7 +515,7 @@
                         <!-- Contact Us Circle Start -->
                         <div class="contact-us-circle">
                             <a href="./index.html#contact">
-                                <img src="images/contact-us-circle.svg" alt="">
+                                <img src="images/contact-us-circle.svg" alt="Contact Us" width="100" height="100" loading="lazy">
                             </a>
                         </div>
                         <!-- Contact Us Circle End -->
@@ -520,7 +532,7 @@
                             <div class="footer-logo">
                              	<!-- Logo Start -->
 					<a class="navbar-brand" href="./index.html#home">
-						<img class="footerlogo" src="./images/whitelogo.png" alt="Texloom Logo">
+						<picture><source srcset="./images/whitelogo.webp" type="image/webp"><img class="footerlogo" src="./images/whitelogo.png" alt="Texloom Logo" width="170" height="51" loading="lazy"></picture>
                
 					</a>
                             </div>
@@ -532,7 +544,7 @@
                                 <form id="newslettersForm" action="#" method="POST">
                                     <div class="form-group">
                                         <input type="email" name="mail" class="form-control" id="mail" placeholder="Enter Email Address" required>
-                                        <button type="submit" class="newsletter-btn"><img src="images/arrow-primary.svg" alt=""></button>
+                                        <button type="submit" class="newsletter-btn" aria-label="Subscribe to Newsletter"><img src="images/arrow-primary.svg" alt="Subscribe" width="20" height="20" loading="lazy"></button>
                                     </div>
                                 </form>
                             </div>
@@ -545,21 +557,21 @@
                             <!-- Footer Contact Item Start -->
                             <div class="footer-contact-item">
                                 <h3>Call us directly</h3>
-                                <p><img src="images/icon-phone-accent.svg" alt=""><a href="tel:+919444805048">+91 94448 05048</a></p>                                        
+                                <p><img src="images/icon-phone-accent.svg" alt="Phone Icon" width="20" height="20" loading="lazy"><a href="tel:+919444805048">+91 94448 05048</a></p>                                        
                             </div>
                             <!-- Footer Contact Item End -->
 
                             <!-- Footer Contact Item Start -->
                             <div class="footer-contact-item">
                                 <h3>Email us directly</h3>
-                                <p><img src="images/icon-mail-accent.svg" alt=""><a href="mailto:texloompvtltd@gmail.com">texloompvtltd@gmail.com</a></p>
+                                <p><img src="images/icon-mail-accent.svg" alt="Email Icon" width="20" height="20" loading="lazy"><a href="mailto:texloompvtltd@gmail.com">texloompvtltd@gmail.com</a></p>
                             </div>
                             <!-- Footer Contact Item End -->
 
                             <!-- Footer Contact Item Start -->
                             <div class="footer-contact-item">
                                 <h3>Our Location</h3>
-                                <p><img src="images/icon-location-accent.svg" alt="">TEXLOOM PRIVATE LIMITED <br>
+                                <p><img src="images/icon-location-accent.svg" alt="Location Icon" width="20" height="20" loading="lazy">TEXLOOM PRIVATE LIMITED <br>
 No 9, New No 19, Ayyavoo Street,
 <br>
 Shenoy Nagar, Chennai – 600030</p>
@@ -605,34 +617,35 @@ Shenoy Nagar, Chennai – 600030</p>
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap js file -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js" defer></script>
     <!-- Validator js file -->
-    <script src="js/validator.min.js"></script>
+    <script src="js/validator.min.js" defer></script>
     <!-- SlickNav js file -->
-    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/jquery.slicknav.js" defer></script>
     <!-- Swiper js file -->
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js" defer></script>
     <!-- Counter js file -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.waypoints.min.js" defer></script>
+    <script src="js/jquery.counterup.min.js" defer></script>
     <!-- Magnific js file -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js" defer></script>
     <!-- SmoothScroll -->
-    <script src="js/SmoothScroll.js"></script>
+    <script src="js/SmoothScroll.js" defer></script>
     <!-- Parallax js -->
-    <script src="js/parallaxie.js"></script>
+    <script src="js/parallaxie.js" defer></script>
     <!-- MagicCursor js file -->
-    <script src="js/gsap.min.js"></script>
-    <script src="js/magiccursor.js"></script>
+    <script src="js/gsap.min.js" defer></script>
+    <script src="js/magiccursor.js" defer></script>
     <!-- Text Effect js file -->
-    <script src="js/SplitText.min.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/SplitText.min.js" defer></script>
+    <script src="js/ScrollTrigger.min.js" defer></script>
     <!-- YTPlayer js File -->
-    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js" defer></script>
     <!-- Wow js file -->
-    <script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js" defer></script>
     <!-- Main Custom js file -->
-    <script src="js/function.js"></script>
+    <script src="js/function.js" defer></script>
+	</main>
 </body>
 
 <!-- Mirrored from html.awaikenthemes.com/linex/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Dec 2025 09:29:46 GMT -->
